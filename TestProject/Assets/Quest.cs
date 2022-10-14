@@ -65,14 +65,14 @@ public class Quest : MonoBehaviour
             Visible_E = false;
             dialog2 = true;
             dialog1 = false;
-            gameObject.GetComponent<Animator>().SetTrigger("Talk");
+            gameObject.GetComponent<Animator>().SetTrigger("Congrat");
         }
 
         if (Input.GetMouseButtonDown(1) & dialog2)
         {
             dialog2 = false;
             dialog = 5;
-            gameObject.GetComponent<Animator>().SetTrigger("Talk2");
+            gameObject.GetComponent<Animator>().SetTrigger("Congrat");
         }
         if (dialog == 4 & !dialog2)
         {
